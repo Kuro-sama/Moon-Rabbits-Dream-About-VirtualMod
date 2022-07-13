@@ -5,15 +5,15 @@
  * @authorId 403725623161257984
  * @invite PsNtzGeHuW
  * @donate https://www.paypal.me/hurtyoutube
- * @website https://github.com/zuzumi-f/Moon-Rabbits-Dream-About-Virtual
- * @source https://github.com/zuzumi-f/Moon-Rabbits-Dream-About-Virtual/blob/main/release/tsukino-mito.base.css
+ * @website https://github.com/Kuro-sama/Moon-Rabbits-Dream-About-Virtual
+ * @source https://github.com/Kuro-sama/Moon-Rabbits-Dream-About-Virtual/blob/main/release/tsukino-mito.base.css
  * @version 1.0
 */
 
 /* Import [DONT TOUCH] */
-@import url('https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/tsukino-mito.base.css');
+@import url('kuro-sama.github.io/Moon-Rabbits-Dream-About-VirtualMod/release/tsukino-mito.base.css');
 /* This makes Discord like another window */
-@import url('https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/window-mode.css');
+@import url('kuro-sama.github.io/Moon-Rabbits-Dream-About-VirtualMod/release/window-mode.css');
 
 /* Top Window Text */
 :root {
