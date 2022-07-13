@@ -11,10 +11,10 @@
     --radius-theme: 18px;
     --staticbg: #DD9FBD;
     --sidewidth: 200px;
-    --font-display: var(--custom-font-display), BlinkMacSystemFont, "SF Pro Display", 'Inter', "Helvetica Neue", "Helvetica", sans-serif;
-    --font-regular: var(--custom-font-regular), BlinkMacSystemFont, "SF Pro Text", 'Inter', "Helvetica Neue", "Helvetica", sans-serif;
+    --font-display: var(--custom-font-display),  "SF Pro Display", 'Inter', "Helvetica Neue", "Helvetica", sans-serif;
+    --font-regular: var(--custom-font-regular),  "SF Pro Text", 'Inter', "Helvetica Neue", "Helvetica", sans-serif;
     --font-primary: var(--custom-font-primary), 'Whitney', "Helvetica Neue", 'Helvetica', 'Arial', sans-serif;
-    --font-code: var(--custom-font-code), Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    --font-code: var(--custom-font-code),  "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
     --custom-font-display: "";
     --custom-font-regular: "";
     --custom-font-primary: "";
