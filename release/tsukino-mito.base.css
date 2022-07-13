@@ -2,11 +2,15 @@
 /*@import url("https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/pop.css");*/
 @import url("https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/compatibility.css");
 @import url("https://zuzumi-f.github.io/classic-discord-status/2016-status.css");
+@import url(https://fonts.cdnfonts.com/css/sf-pro-display);
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap);
 
 :root {
     --the-borders: 3px solid #da4a60;
     --drag-background: linear-gradient(#e8c4d3, #e39ba7);
     --radius-theme: 18px;
+    --staticbg: #DD9FBD;
+    --sidewidth: 200px;
 }
 
 /* Theme dark */
@@ -18,8 +22,8 @@
     --interactive-muted: hsl(217, 8%, 27%);
     --background-primary: hsl(220, 8%, 14%);
     --background-secondary: hsl(223, 7%, 11%);
-    --background-secondary-alt: hsl(220, 7%, 9%);
-    --background-tertiary: hsl(216, 7%, 6%);
+    --background-secondary-alt: hsl(240, 5%, 4%);
+    --background-tertiary: hsl(240, 5%, 4%);
     --background-accent: hsl(217, 8%, 21%);
     --background-floating: hsl(225, 8%, 4%);
     --background-mobile-primary: var(--background-primary);
@@ -152,7 +156,7 @@
     background: #f386bd;
 }
 
-/* Background */
+/* Background 
 div#app-mount.appMount-2yBXZl {
     background-image: linear-gradient(270deg, #4BB4E0, #DD9FBD 60%);
     background-size: 200% 100%;
@@ -170,8 +174,14 @@ div#app-mount.appMount-2yBXZl {
     100% {
         background-position:0 50%
     }
+}*/
+
+div#app-mount.appMount-2yBXZl {
+    background: var(--staticbg) ;
+    
 }
 
+* {font-family:BlinkMacSystemFont, "SF Pro Display", 'Inter', "Helvetica Neue", "Helvetica", sans-serif;}
 /* Window general */
 .platform-win .sidebar-1tnWFu {
     border-radius: 0;
@@ -246,8 +256,6 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
     content: var(--a-custom-text);
     text-align: center;
     position: absolute;
-    font-size: 20px;
-    font-weight: 500;
     width: calc(100% - 204px);
     color: #fff;
     z-index: -9999;
@@ -289,7 +297,7 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
 }
 .panels-3wFtMD > .container-YkUktl {
     height: 60px;
-    font-weight: 550;
+  
 }
 .panels-3wFtMD > .container-YkUktl > .avatarWrapper-1B9FTW {
     transform: scale(1.12);
@@ -373,7 +381,7 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
 
 /* Sidebar private and channels */
 .sidebar-1tnWFu {
-    width: 280px;
+    width: var(--sidewidth);
 }
 .channel-1Shao0 {
     max-width: 260px;
@@ -406,7 +414,7 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
     transform: scale(1.12);
 }
 .name-2m3Cms, .name-28HaxV, .name-3Vmqxm {
-    font-weight: bold;
+  
 }
 
 .theme-dark .name-2m3Cms, .theme-dark .name-28HaxV {
@@ -429,7 +437,7 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
 }
 
 .name-3BUDLf.container-q97qHp {
-    font-weight: 700;
+
 }
 
 .wrapper-1S43wv {
@@ -688,12 +696,12 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
 }
 
 .theme-dark .textArea-2CLwUE, .theme-dark .footer-3naVBw .input-2g-os5{
-    font-weight: 500;
+
     color: var(--text-color);
 }
 
 #app-mount .slateTextArea-27tjG0 {
-    font-weight: 500;
+  
     caret-color: var(--text-color);
     color: var(--text-color);
 }
@@ -1085,7 +1093,6 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
     margin-bottom: 4px;
 }
 .list-2x9Cl9 {
-    transform: scale(1.06);
     padding-left: 38px;
     margin-right: 16px;
     padding-top: 4px;
@@ -1172,7 +1179,6 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
     opacity: 1;
     content: ">";
     color: #fff;
-    font-weight: 500;
     right: 4px;
     position: relative;
 }
@@ -1273,7 +1279,6 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
     opacity: 1;
     content: ">";
     color: #fff;
-    font-weight: 500;
     right: 4px;
     position: relative;
 }
