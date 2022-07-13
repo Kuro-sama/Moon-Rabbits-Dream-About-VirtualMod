@@ -804,6 +804,7 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
     border-bottom: 3px solid var(--text-color);
     -webkit-transition: all 500ms;
     transition: all 500ms;
+    background-color: var(--background-secondary);
 }
 #app-mount .form-3gdLxP:focus-within .scrollableContainer-15eg7h {
     border-color: #58B2DB;
@@ -826,10 +827,7 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
     border-color: #CCB0CF;
 }
 
-.scrollableContainer-15eg7h {
-    background-color: var(--background-secondary-alt);
-  
-  }
+
 
 .channelTextArea-1FufC0.channelTextArea-1VQBuV .attachedBars-2BCP3l {
     margin-bottom: 4px;
