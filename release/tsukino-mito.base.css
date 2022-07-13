@@ -26,9 +26,9 @@
     --text-link-low-saturation: hsl(314, 100%, 52.9%);
     --text-brand: hsl(335, 86.1%, 77.5%);
     --interactive-muted: hsl(217, 8%, 27%);
-    --background-primary: hsl(220, 8%, 14%);
+    --background-primary: hsl(223, 7%, 11%);
     --background-secondary: hsl(223, 7%, 11%);
-    --background-secondary-alt: hsl(220, 7%, 9%);
+    --background-secondary-alt: hsl(223, 7%, 11%);
     --background-tertiary: hsl(216, 7%, 6%);
     --background-accent: hsl(217, 8%, 21%);
     --background-floating: hsl(225, 8%, 4%);
