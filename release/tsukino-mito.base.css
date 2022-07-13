@@ -1,5 +1,4 @@
 @import url("https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/settings-modal.css");
-/*@import url("https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/pop.css");*/
 @import url("https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/compatibility.css");
 @import url("https://zuzumi-f.github.io/classic-discord-status/2016-status.css");
 @import url(https://fonts.cdnfonts.com/css/sf-pro-display);
@@ -78,23 +77,23 @@
 
 .name-28HaxV {
     font-family: var(--font-regular);
-    font-weight: 400;
+    font-weight: normal;
 }
 
 .name-2m3Cms {
     font-family: var(--font-regular);
 
-    font-weight: 400;
+    font-weight: normal;
 }
 
 .name-3Vmqxm {
     font-family: var(--font-regular);
-    font-weight: 400;
+    font-weight: normal;
 }
 
 .sidebar-nqHbhN .item-3XjbnG {
     font-family: var(--font-regular);
-    font-weight: 400;
+    font-weight: normal;
 }
 
 .wrapper-3AZUiP.errorPage-2pZ2Kq .title-NjUt5y {
@@ -107,7 +106,7 @@
 }
 
 .header-2Kx1US {
-    font-weight: 500;
+    font-weight: normal;
     font-family: var(--font-display);
 }
 
@@ -117,7 +116,7 @@
 
 .browser-mnQ1T7.container-18GwIk .sectionHeader-QsOv68 {
     font-family: var(--font-display);
-    font-weight: 500;
+    font-weight: normal;
 }
 
 .floating-window-titlebar .title {
@@ -127,7 +126,7 @@
 
 .bd-settings-title.bd-settings-group-title {
     font-family: var(--font-display);
-    font-weight: 500;
+    font-weight: normal;
 }
 
 .ChannelDms-channelpopout-headerName {
@@ -137,7 +136,7 @@
 #appearance-tab.contentColumn-1C7as6> :not([class]):first-child>.children-1xdcWE>div:nth-child(2) [role="radiogroup"] .item-2idW98:last-child .info-2FZci4::before {
     font-family: var(--font-primary);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: normal;
 }
 
 .auditLog-1NVAY0 .text-sm-medium-3Pz3rB,
@@ -150,7 +149,7 @@
 .browser-mnQ1T7.container-18GwIk .container-2rzKKA .heading-md-normal-3Ytn6I {
     font-family: var(--font-primary);
     font-size: 16px;
-    font-weight: 600;
+    font-weight: normal;
 }
 
 
