@@ -11,6 +11,15 @@
     --radius-theme: 18px;
     --staticbg: #DD9FBD;
     --sidewidth: 200px;
+    --font-display: var(--custom-font-display), BlinkMacSystemFont, "SF Pro Display", 'Inter', "Helvetica Neue", "Helvetica", sans-serif;
+    --font-regular: var(--custom-font-regular), BlinkMacSystemFont, "SF Pro Text", 'Inter', "Helvetica Neue", "Helvetica", sans-serif;
+    --font-primary: var(--custom-font-primary), 'Whitney', "Helvetica Neue", 'Helvetica', 'Arial', sans-serif;
+    --font-code: var(--custom-font-code), Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    --custom-font-display: "";
+    --custom-font-regular: "";
+    --custom-font-primary: "";
+    --custom-font-code: "";
+
 }
 
 /* Theme dark */
@@ -66,6 +75,90 @@
 .theme-dark, .theme-light {
     --focus-primary: hsl(314, 100%, 47.8%);
 }
+
+.name-28HaxV {
+    font-family: var(--font-regular);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.name-2m3Cms {
+    font-family: var(--font-regular);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.name-3Vmqxm {
+    font-family: var(--font-regular);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sidebar-nqHbhN .item-3XjbnG {
+    font-size: 14px;
+    font-family: var(--font-regular);
+    font-weight: 400;
+}
+
+.wrapper-3AZUiP.errorPage-2pZ2Kq .title-NjUt5y {
+    font-size: 20px;
+    font-family: var(--font-display);
+}
+
+.heading-lg-medium-3gUJeM,
+.heading-lg-normal-1bqh2L {
+    font-family: var(--font-display);
+    font-size: 16px;
+}
+
+.header-2Kx1US {
+    font-weight: 500;
+    font-family: var(--font-display);
+}
+
+.headerTagWithNickname-1U8zZH {
+    font-family: var(--font-display)
+}
+
+.browser-mnQ1T7.container-18GwIk .sectionHeader-QsOv68 {
+    font-family: var(--font-display);
+    font-weight: 500;
+}
+
+.floating-window-titlebar .title {
+    font-family: var(--font-display);
+    font-weight: 500;
+}
+
+.bd-settings-title.bd-settings-group-title {
+    font-family: var(--font-display);
+    font-weight: 500;
+}
+
+.ChannelDms-channelpopout-headerName {
+    font-family: var(--font-display);
+}
+
+#appearance-tab.contentColumn-1C7as6> :not([class]):first-child>.children-1xdcWE>div:nth-child(2) [role="radiogroup"] .item-2idW98:last-child .info-2FZci4::before {
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.auditLog-1NVAY0 .text-sm-medium-3Pz3rB,
+.auditLog-1NVAY0 .text-sm-normal-3Zj3Iv {
+    font-family: var(--font-primary);
+    font-size: 12px;
+}
+
+.browser-mnQ1T7.container-18GwIk .container-2rzKKA .heading-md-medium-2DVCeJ,
+.browser-mnQ1T7.container-18GwIk .container-2rzKKA .heading-md-normal-3Ytn6I {
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
 
 /* Theme Light */
 .theme-light {
@@ -181,7 +274,8 @@ div#app-mount.appMount-2yBXZl {
     
 }
 
-* {font-family:BlinkMacSystemFont, "SF Pro Display", 'Inter', "Helvetica Neue", "Helvetica", sans-serif;}
+
+
 /* Window general */
 .platform-win .sidebar-1tnWFu {
     border-radius: 0;
