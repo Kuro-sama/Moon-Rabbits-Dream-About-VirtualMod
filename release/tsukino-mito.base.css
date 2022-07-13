@@ -33,6 +33,7 @@
     --background-primary: hsl(216, 7%, 6%);
     --background-secondary: hsl(216, 7%, 6%);
     --background-secondary-alt: hsl(216, 7%, 6%);
+    --boxtext: #fff;
     --background-tertiary: hsl(216, 7%, 6%);
     --background-accent: hsl(217, 8%, 21%);
     --background-floating: hsl(225, 8%, 4%);
@@ -110,7 +111,6 @@
 #vanity_url-tab>div:not([class]):first-child>.title-3hptVQ:first-child,
 .contentColumn-1C7as6:first-child>.title-3hptVQ:first-child {
     font-size: 16px;
-    line-height: 20px;
     font-weight: 600;
 }
 
@@ -152,7 +152,6 @@
 .heading-lg-normal-1bqh2L {
     font-family: var(--font-display);
     font-size: 16px;
-    line-height: 20px;
 }
 .name-3Vmqxm {
     font-family: var(--font-regular);
@@ -176,7 +175,7 @@
     content: "Auto";
     font-family: var(--font-primary);
     font-size: 16px;
-    line-height: 20px;
+
     font-weight: 500;
 }
 
@@ -184,7 +183,7 @@
 .auditLog-1NVAY0 .text-sm-normal-3Zj3Iv {
     font-family: var(--font-primary);
     font-size: 12px;
-    line-height: 18px;
+
 }
 
 .inviteSettingsInviteRow-1rZeIM {
@@ -208,7 +207,7 @@
 .headerTagDiscriminatorNoNickname-dfcvHa {
     font-size: 14px;
     font-weight: 400;
-    line-height: 28px;
+ 
 }
 #emoji-picker-tab-panel .medium-13kyaW .input-2FSSDe,
 #emoji-picker-tab-panel .medium-13kyaW .tag-15zcD_,
@@ -217,7 +216,7 @@
 #sticker-picker-tab-panel .medium-13kyaW .input-2FSSDe,
 #sticker-picker-tab-panel .medium-13kyaW .tag-15zcD_ {
     font-size: 14px;
-    line-height: 24px;
+
     height: 24px;
 
 }
@@ -225,7 +224,7 @@
 .browser-mnQ1T7.container-18GwIk .container-2rzKKA .heading-md-normal-3Ytn6I {
     font-family: var(--font-primary);
     font-size: 16px;
-    line-height: 20px;
+
     font-weight: 600;
 }
 #app-mount .calendarPicker-sDhzdi .react-datepicker__current-month {
@@ -233,7 +232,6 @@
 }
 .contentColumn-1C7as6>.bd-settings-title:first-child {
     font-size: 16px;
-    line-height: 20px;
     font-weight: 600;
 }
 
@@ -516,7 +514,7 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
   fill: var(--offline-color);
 }
 
-/* Server list and members position*/
+/* Server list and members position
 .container-1eFtFS {
     flex-direction: row-reverse;
 }
@@ -530,7 +528,7 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
 
 #app-mount .container-2o3qEW {
     flex-direction: inherit;
-}
+}*/
 
 /* Sidebar private and channels */
 .sidebar-1tnWFu {
@@ -861,6 +859,10 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
 .theme-dark .channelTextArea-1VQBuV .attachButtonInner-2mwer8 path, 
 .theme-dark .channelTextArea-1VQBuV .buttonWrapper-3YFQGJ path {
     fill: var(--icon-color);
+}
+
+.scrollableContainer-15eg7h .inner-NQg18Y .markup-eYLPri{
+    color: var(--boxtext);
 }
 
 #app-mount .form-3gdLxP .scrollableContainer-15eg7h {

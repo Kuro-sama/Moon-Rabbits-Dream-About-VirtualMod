@@ -24,6 +24,11 @@
     --a-custom-text: ""; /* The text that appear in top, "" if you dont want any [write in "(text)"] */
     --sidewidth: 200px;
     --staticbg: #DD9FBD;
+    --the-borders: 3px solid #da4a60;
+    --background-primary: hsl(216, 7%, 6%);
+    --background-secondary: hsl(216, 7%, 6%);
+    --background-secondary-alt: hsl(216, 7%, 6%);
+    --boxtext: #fff;
     /* font */
     --custom-font-display: "";
     --custom-font-regular: "";
