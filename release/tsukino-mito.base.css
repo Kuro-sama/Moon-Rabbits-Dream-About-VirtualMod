@@ -26,9 +26,9 @@
     --text-link-low-saturation: hsl(314, 100%, 52.9%);
     --text-brand: hsl(335, 86.1%, 77.5%);
     --interactive-muted: hsl(217, 8%, 27%);
-    --background-primary: hsl(223, 7%, 11%);
-    --background-secondary: hsl(223, 7%, 11%);
-    --background-secondary-alt: hsl(223, 7%, 11%);
+    --background-primary: hsl(216, 7%, 6%);
+    --background-secondary: hsl(216, 7%, 6%);
+    --background-secondary-alt: hsl(216, 7%, 6%);
     --background-tertiary: hsl(216, 7%, 6%);
     --background-accent: hsl(217, 8%, 21%);
     --background-floating: hsl(225, 8%, 4%);
@@ -120,7 +120,7 @@
 
 .floating-window-titlebar .title {
     font-family: var(--font-display);
-    font-weight: 500;
+
 }
 
 .bd-settings-title.bd-settings-group-title {
@@ -134,20 +134,20 @@
 
 #appearance-tab.contentColumn-1C7as6> :not([class]):first-child>.children-1xdcWE>div:nth-child(2) [role="radiogroup"] .item-2idW98:last-child .info-2FZci4::before {
     font-family: var(--font-primary);
-    font-size: 16px;
+
     font-weight: normal;
 }
 
 .auditLog-1NVAY0 .text-sm-medium-3Pz3rB,
 .auditLog-1NVAY0 .text-sm-normal-3Zj3Iv {
     font-family: var(--font-primary);
-    font-size: 12px;
+  
 }
 
 .browser-mnQ1T7.container-18GwIk .container-2rzKKA .heading-md-medium-2DVCeJ,
 .browser-mnQ1T7.container-18GwIk .container-2rzKKA .heading-md-normal-3Ytn6I {
     font-family: var(--font-primary);
-    font-size: 16px;
+   
     font-weight: normal;
 }
 
@@ -1515,14 +1515,10 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
 /* Watermark */
 .info-1sUqUG::before {
     content: "Moon Rabbits Dream About Virtual";
-    font-size: 12px;
-    font-weight: 500;
     display: block;
 }
 .info-1sUqUG > span:first-child::before {
     content: "version 1.0";
-    font-size: 12px;
-    font-weight: 500;
     display: block;
 }
 .theme-light .info-1sUqUG::before, .theme-light .info-1sUqUG > span:first-child::before {
