@@ -1,8 +1,6 @@
 @import url("https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/settings-modal.css");
 @import url("https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/compatibility.css");
 @import url("https://zuzumi-f.github.io/classic-discord-status/2016-status.css");
-@import url(https://fonts.cdnfonts.com/css/sf-pro-display);
-@import url(https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap);
 /*@import url("https://kuro-sama.github.io/Moon-Rabbits-Dream-About-Virtual/release/pop.css");*/
 
 :root {
@@ -10,12 +8,18 @@
     --drag-background: linear-gradient(#e8c4d3, #e39ba7);
     --radius-theme: 18px;
     --staticbg: #DD9FBD;
-    --sidewidth: 200px;
-    --font-display:   "SF Pro Display", 'Inter', "Helvetica Neue", "Helvetica", sans-serif;
-    --font-regular:  "SF Pro Text", 'Inter', "Helvetica Neue", "Helvetica", sans-serif;
-    --font-primary: 'Whitney', "Helvetica Neue", 'Helvetica', 'Arial', sans-serif;
-    --font-code:  "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
- 
+    --font-display: var(--custom-font-display), BlinkMacSystemFont, "SF Pro Display", 'Inter', "Helvetica Neue", "Helvetica", sans-serif;
+    --font-regular: var(--custom-font-regular), BlinkMacSystemFont, "SF Pro Text", 'Inter', "Helvetica Neue", "Helvetica", sans-serif;
+    --font-primary: var(--custom-font-primary), 'Whitney', "Helvetica Neue", 'Helvetica', 'Arial', sans-serif;
+    --font-code: var(--custom-font-code), Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+ /* sidebar */
+ --sidewidth: 200px;
+
+ /* font */
+ --custom-font-display: "";
+ --custom-font-regular: "";
+ --custom-font-primary: "";
+ --custom-font-code: "";
 
 }
 

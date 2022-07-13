@@ -15,10 +15,20 @@
 /* This makes Discord like another window */
 @import url('https://kuro-sama.github.io/Moon-Rabbits-Dream-About-VirtualMod/release/window-mode.css');
 
+@import url(https://fonts.cdnfonts.com/css/sf-pro-display);
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap);
+
+
 /* Top Window Text */
 :root {
     --a-custom-text: ""; /* The text that appear in top, "" if you dont want any [write in "(text)"] */
-
+    --sidewidth: 200px;
+    --staticbg: #DD9FBD;
+    /* font */
+    --custom-font-display: "";
+    --custom-font-regular: "";
+    --custom-font-primary: "";
+    --custom-font-code: "";
 }
 
 /*----------------------------------------------------
