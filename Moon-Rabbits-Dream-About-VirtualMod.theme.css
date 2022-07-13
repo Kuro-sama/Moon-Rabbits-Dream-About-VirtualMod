@@ -11,9 +11,9 @@
 */
 
 /* Import [DONT TOUCH] */
-@import url('kuro-sama.github.io/Moon-Rabbits-Dream-About-VirtualMod/release/tsukino-mito.base.css');
+@import url('https://kuro-sama.github.io/Moon-Rabbits-Dream-About-VirtualMod/release/tsukino-mito.base.css');
 /* This makes Discord like another window */
-@import url('kuro-sama.github.io/Moon-Rabbits-Dream-About-VirtualMod/release/window-mode.css');
+@import url('https://kuro-sama.github.io/Moon-Rabbits-Dream-About-VirtualMod/release/window-mode.css');
 
 /* Top Window Text */
 :root {
