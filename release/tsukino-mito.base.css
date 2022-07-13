@@ -10,14 +10,11 @@
     --radius-theme: 18px;
     --staticbg: #DD9FBD;
     --sidewidth: 200px;
-    --font-display: var(--custom-font-display),  "SF Pro Display", 'Inter', "Helvetica Neue", "Helvetica", sans-serif;
-    --font-regular: var(--custom-font-regular),  "SF Pro Text", 'Inter', "Helvetica Neue", "Helvetica", sans-serif;
-    --font-primary: var(--custom-font-primary), 'Whitney', "Helvetica Neue", 'Helvetica', 'Arial', sans-serif;
-    --font-code: var(--custom-font-code),  "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-    --custom-font-display: "";
-    --custom-font-regular: "";
-    --custom-font-primary: "";
-    --custom-font-code: "";
+    --font-display:   "SF Pro Display", 'Inter', "Helvetica Neue", "Helvetica", sans-serif;
+    --font-regular:  "SF Pro Text", 'Inter', "Helvetica Neue", "Helvetica", sans-serif;
+    --font-primary: 'Whitney', "Helvetica Neue", 'Helvetica', 'Arial', sans-serif;
+    --font-code:  "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+ 
 
 }
 
