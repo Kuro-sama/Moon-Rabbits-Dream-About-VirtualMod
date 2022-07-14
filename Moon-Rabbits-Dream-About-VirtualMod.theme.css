@@ -26,10 +26,11 @@
     --gradient: linear-gradient(270deg, #4BB4E0, #DD9FBD 60%);
     --sidedark: hsla(216, 4%, 22%, 0.5);
     --sidelight: hsla(0, 0%, 100%, 0.6);
-    
+    --drag-background: linear-gradient(#e8c4d3, #e39ba7);
+    --radius-theme: 18px;
+    --radius-secondary: 8px;
+
     /* dock */
-    --home-icon: initial;
-    --favorites-icon: initial;
     --dock-border-radius: 0;
     --icon:45;
 
