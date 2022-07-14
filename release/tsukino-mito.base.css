@@ -87,7 +87,7 @@
 .theme-dark .scroller-3X7KbA, .theme-dark .wrapper-1_HaEi {
     background-color: var(--sidedark);
 }
-.theme-light  .scroller-3X7KbA, .theme-light .wrapper-1_HaEi {
+.theme-light .scroller-3X7KbA, .theme-light .wrapper-1_HaEi {
     background-color: var(--sidelight);
 }
 
@@ -104,12 +104,13 @@
 
 /*box shadow test*/
 
-.animatedContainer-2laTjx,
+/*.animatedContainer-2laTjx,
 .bannerImage-ubW8K-,
 .header-3OsQeK {
     border-top-left-radius: 18px;
     border-bottom-left-radius: 18px;
 }
+*/
 .header-3OsQeK {
     box-shadow: none;
 }
@@ -123,6 +124,113 @@
 .content-1jQy2l:before {
      -webkit-box-shadow: none;
     box-shadow: none;
+}
+
+/* toolbar */
+
+.toolbar-3_r2xA .search-39IXmY {
+    margin: 0 4px;
+    
+}
+
+.toolbar-3_r2xA .searchBar-jGtisZ {
+    display: flex;
+    width: 28px;
+    height: 28px;
+    align-items: center;
+    -webkit-transition: width .25s ease;
+    transition: width .25s ease;
+}
+
+
+
+
+.toolbar-3_r2xA .search-2Mwzzq.open-1F8u2c .searchBar-jGtisZ {
+    display: flex;
+    width: 240px;
+}
+
+
+
+.toolbar-3_r2xA .searchBar-jGtisZ>.icon-tZMHgY {
+    
+    order: -1;
+}
+
+.toolbar-3_r2xA .search-2Mwzzq .DraftEditor-root {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    width: 100%;
+}
+
+.toolbar-3_r2xA .search-2Mwzzq .DraftEditor-root .DraftEditor-editorContainer {
+    width: 100%;
+}
+
+.toolbar-3_r2xA .search-2Mwzzq .DraftEditor-root .public-DraftEditor-content::-webkit-scrollbar {
+    display: none;
+}
+
+.toolbar-3_r2xA .search-2Mwzzq .DraftEditor-root .public-DraftEditor-content,
+.search-2Mwzzq .DraftEditor-root .public-DraftEditorPlaceholder-root {
+    padding-bottom: 0;
+}
+
+.toolbar-3_r2xA .search-2Mwzzq .searchBar-jGtisZ .iconContainer-1RqWJj {
+    -webkit-transition: width .25s ease, height .25s ease;
+    transition: width .25s ease, height .25s ease;
+}
+
+.toolbar-3_r2xA .search-2Mwzzq:not(.open-1F8u2c) .searchBar-jGtisZ .iconContainer-1RqWJj {
+    width: 18px;
+    height: 18px;
+}
+
+.search-2Mwzzq .DraftEditor-root .public-DraftEditorPlaceholder-root {
+    opacity: 0;
+    -webkit-transition: opacity .25s ease;
+    transition: opacity .25s ease;
+}
+
+#app-mount .searchAnswer-23w-CH,
+#app-mount .searchFilter-2UfsDk {
+    background:  #C7BAD9;
+    
+}
+
+.searchFilter-2UfsDk {
+    padding: 0 2px;
+    border-radius: 3px 0 0 3px;
+}
+
+.searchAnswer-23w-CH {
+    border-radius: 0 3px 3px 0;
+}
+
+.toolbar-3_r2xA .search-2Mwzzq.open-1F8u2c .DraftEditor-root .public-DraftEditorPlaceholder-root {
+    opacity: 1;
+}
+
+.toolbar-3_r2xA a[href="https://support.discord.com"] {
+    display: none;
+}
+
+
+
+.container-ZMc96U:not(.transparent-1lUmft) .toolbar-3_r2xA .iconWrapper-2awDjA {
+    width: 28px;
+    height: 28px;
+    margin: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.container-ZMc96U:not(.transparent-1lUmft) .toolbar-3_r2xA .iconWrapper-2awDjA .icon-2xnN2Y {
+    width: 20px;
+    height: 20px;
 }
 
 /* 4. dock */
@@ -242,7 +350,7 @@
     background-image: var(--favorites-icon, url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 -17 24 58" fill="white"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.924 8.61789C21.77 8.24489 21.404 8.00089 21 8.00089H15.618L12.894 2.55389C12.555 1.87689 11.444 1.87689 11.105 2.55389L8.38199 8.00089H2.99999C2.59599 8.00089 2.22999 8.24489 2.07599 8.61789C1.92199 8.99089 2.00699 9.42289 2.29299 9.70789L6.87699 14.2919L5.03899 20.7269C4.92399 21.1299 5.07199 21.5619 5.40999 21.8089C5.74999 22.0569 6.20699 22.0659 6.55399 21.8329L12 18.2029L17.445 21.8329C17.613 21.9449 17.806 22.0009 18 22.0009C18.207 22.0009 18.414 21.9369 18.59 21.8089C18.928 21.5619 19.076 21.1299 18.961 20.7269L17.123 14.2919L21.707 9.70789C21.993 9.42289 22.078 8.99089 21.924 8.61789Z" ></path></svg>'));
 }
 
-.guilds-2JjMmN .tree-3agP2X {
+/*.guilds-2JjMmN .tree-3agP2X {
     -webkit-app-region: no-drag;
 }
 
@@ -294,7 +402,7 @@
     transform: translateX(calc((72px*var(--guildlist-peek-group-unread))*(1 - var(--guildlist-show))));
     transition: transform .25s ease
 }
-
+*/
 
 
 /* Theme Light */
@@ -740,6 +848,11 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
 }*/
 
 /* Sidebar private and channels */
+
+.container-1eFtFS {
+    flex-direction: row-reverse;
+}
+
 .sidebar-1tnWFu {
     width: var(--sidewidth);
 }
