@@ -24,11 +24,15 @@
     --a-custom-text: ""; /* The text that appear in top, "" if you dont want any [write in "(text)"] */
     --sidewidth: 200px;
     --staticbg: #DD9FBD;
-    --the-borders: 3px solid #da4a60;
-    --background-primary: hsl(210, 7%, 11%);
-    --background-secondary: hsl(210, 7%, 11%);
-    --background-secondary-alt: hsl(210, 7%, 11%);
-    --sidedark: hsla(0, 0%, 20%, 1);
+    --the-borders: 2px solid #da4a60;
+    --background-primary: hsl(210, 5%, 16%);
+    --background-secondary: hsl(216, 4%, 22%);
+    --background-secondary-alt: hsl(210, 5%, 16%);
+
+    --background-tertiary: hsl(216, 4%, 22%);
+    --background-accent: hsl(213, 64%, 78%);
+    
+    --sidedark: hsla(216, 4%, 22%, 0.5);
     --sidelight: hsla(0, 0%, 100%, 0.6);
     --boxtext: #fff;
     /* font */
@@ -36,7 +40,9 @@
     --custom-font-regular: "";
     --custom-font-primary: "";
     --custom-font-code: "";
+    --text-color: #313D40;
 }
+
 
 /*----------------------------------------------------
                 anything else down here
