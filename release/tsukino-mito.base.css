@@ -43,6 +43,8 @@
     --background-modifier-active: hsla(217, 8%, 26%, 0.24);
     --background-modifier-selected: hsla(217, 8%, 26%, 0.32);
     --background-modifier-accent: hsla(0, 0%, 87%, 0.08);
+    --sidedark: hsla(0, 0%, 20%, 0.6);
+    --sidelight: hsla(0, 0%, 100%, 0.6);
     --info-help-background: hsla(314, 100%, 47.8%, 0.1);
     --info-help-foreground: hsl(314, 100%, 47.8%);
     --status-warning-text: hsl(0, 0%, 0%);
@@ -79,6 +81,12 @@
     --focus-primary: hsl(314, 100%, 47.8%);
 }
 
+.theme-dark .scroller-3X7KbA, .theme-dark .wrapper-1_HaEi {
+    background-color: var(--sidedark);
+}
+.theme-light  .scroller-3X7KbA, .theme-light .wrapper-1_HaEi {
+    background-color: var(--sidelight);
+}
 
 
 
@@ -438,10 +446,10 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
 
 /* User bar */
 .theme-dark .panels-3wFtMD {
-    background-color: rgba(41, 43, 47, 0.4);
+    background-color: var(--sidedark);
 }
 .theme-light .panels-3wFtMD {
-    background-color: rgba(335, 237, 239, 0.4);
+    background-color: var(--sidelighjt);
 }
 .panels-3wFtMD {
     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.48);
@@ -451,7 +459,6 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
   
 }
 .panels-3wFtMD > .container-YkUktl > .avatarWrapper-1B9FTW {
-    transform: scale(1.12);
     padding: 4px;
 }
 .button-12Fmur {
@@ -562,7 +569,7 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
 }
 
 .avatar-1HDIsL, .avatar-6qzftW {
-    transform: scale(1.12);
+ 
 }
 
 .theme-dark .name-2m3Cms, .theme-dark .name-28HaxV {
@@ -607,10 +614,10 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
 }
 
 .theme-dark .sidebar-1tnWFu {
-    background: hsla(0, 0%, 20%, 0.6);
+    background: var(--sidedark);
 }
 .theme-light .sidebar-1tnWFu {
-    background: hsla(0, 0%, 100%, 0.6);
+    background: var(--sidelight);
 }
 
 .animatedContainer-2laTjx, .bannerImage-ubW8K-, .bannerImg-2PzH6z {
@@ -938,7 +945,7 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
     padding: 0 !important;
 }
 .searchBar-jGtisZ .icon-tZMHgY {
-    transform: scale(1.2);
+
 }
 .icon-tZMHgY {
     color: var(--interactive-normal)!important;
@@ -1085,7 +1092,7 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
     background-color: var(--activity-card-background);
 }
 #app-mount .carousel-2M5OVB {
-    transform: scale(0.86);
+  
     left: -46px !important;
 }
 .progressBarWrapper-kd5G1S {
