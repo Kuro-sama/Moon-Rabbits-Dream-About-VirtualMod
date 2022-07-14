@@ -28,7 +28,7 @@
     --background-primary: hsl(210, 7%, 11%);
     --background-secondary: hsl(210, 7%, 11%);
     --background-secondary-alt: hsl(210, 7%, 11%);
-    --sidedark: hsla(0, 0%, 20%, 0.6);
+    --sidedark: hsla(0, 0%, 20%, 1);
     --sidelight: hsla(0, 0%, 100%, 0.6);
     --boxtext: #fff;
     /* font */
