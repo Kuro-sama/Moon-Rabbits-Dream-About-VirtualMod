@@ -108,9 +108,7 @@
 .bannerImage-ubW8K-,
 .header-3OsQeK {
     border-top-left-radius: 18px;
-   
     border-bottom-left-radius: 18px;
-
 }
 .searchBar-3TnChZ {
     box-shadow: none;
@@ -118,9 +116,9 @@
 .toolbar-3_r2xA .search-2Mwzzq:not(.open-1F8u2c) .searchBar-jGtisZ {
     box-shadow: none;
  
-}.content-1jQy2l:before {
-
-    -webkit-box-shadow: none;
+}
+.content-1jQy2l:before {
+     -webkit-box-shadow: none;
     box-shadow: none;
 }
 
