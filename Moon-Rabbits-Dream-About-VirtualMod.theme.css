@@ -16,7 +16,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap);
 
 
-/* Top Window Text */
 :root {
     --staticbg: #DD9FBD;
     --background-primary: hsl(210, 5%, 16%);
@@ -27,28 +26,34 @@
     --gradient: linear-gradient(270deg, #4BB4E0, #DD9FBD 60%);
     --sidedark: hsla(216, 4%, 22%, 0.5);
     --sidelight: hsla(0, 0%, 100%, 0.6);
-
+    
     /* dock */
     --home-icon: initial;
     --favorites-icon: initial;
     --dock-border-radius: 0;
-    --icon:42;
+    --icon:45;
 
     /* font */
     --custom-font-display: "";
     --custom-font-regular: "";
     --custom-font-primary: "";
     --custom-font-code: "";
-
+    
+    --background-accent-hue: 213;
+    --floating-background-lightness: 0;
+    --background-floating-border-l: calc(37% * (1 + var(--floating-background-lightness)));
+    --background-floating-border-color: hsl(var(--background-accent-hue), 4%, var(--background-floating-border-l));
+    --background-floating-border: 1px solid var(--background-floating-border-color);
+      
     /*stuff*/
     --the-borders: 2px solid #da4a60;
     --scroller-color: hsl(0, 0%, 42%);
+    --accent-border: 1px solid rgba(99, 99, 99, 0.507);
     --sidewidth: 220px;
     --members-width: 240px;
     --text-color: #d1d1d1;
     --a-custom-text: "(-.-)Zzz"; /* The text that appear in top, "" if you dont want any [write in "(text)"] */
 }
-
 
 /*----------------------------------------------------
                 anything else down here
@@ -77,4 +82,16 @@ div#app-mount.appMount-2yBXZl {
 div#app-mount.appMount-2yBXZl {
     background: var(--staticbg) ;
     
+}
+
+/* Dock */
+    .theme-dark .scroller-3X7KbA {
+    contain: unset;
+    border-radius: calc(1.1rem * (1 + var(--dock-border-radius)));
+    background-color:var(--sidedark);
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.4);
+    border-top: var(--accent-border);
+    border-right: var(--accent-border);
+    border-left:  var(--accent-border);
+    border-bottom: var(--accent-border);
 }
