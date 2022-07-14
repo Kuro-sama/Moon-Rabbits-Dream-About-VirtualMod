@@ -21,7 +21,7 @@
 
 /* Top Window Text */
 :root {
-    --a-custom-text: ""; /* The text that appear in top, "" if you dont want any [write in "(text)"] */
+    --a-custom-text: "(-.-)Zzz"; /* The text that appear in top, "" if you dont want any [write in "(text)"] */
     --sidewidth: 200px;
     --staticbg: #DD9FBD;
     --the-borders: 2px solid #da4a60;
