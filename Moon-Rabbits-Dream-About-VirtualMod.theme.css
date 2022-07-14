@@ -17,7 +17,7 @@
 
 
 :root {
-    --staticbg: #DD9FBD;
+    --staticbg: rgb(48, 132, 168);
     --background-primary: hsl(210, 5%, 16%);
     --background-secondary: hsl(216, 4%, 22%);
     --background-secondary-alt: hsl(210, 5%, 16%);
@@ -32,8 +32,9 @@
 
     /* dock */
     --dock-border-radius: 0;
-    --icon:45;
-
+    --icon:45;  
+ 
+    
     /* font */
     --custom-font-display: "";
     --custom-font-regular: "";
