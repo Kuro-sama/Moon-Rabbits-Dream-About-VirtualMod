@@ -1,6 +1,6 @@
 /**
- * @name Moon Rabbits Dream About Virtual Mod
- * @description Based in Tsukino Mito Album cover - Edit by kuro
+ * @name Moon Rabbits Dream About Virtual Mod - Edit by kuro
+ * @description Based in Tsukino Mito Album cover 
  * @author zuzumi#8097
  * @authorId 403725623161257984
  * @invite PsNtzGeHuW
@@ -10,36 +10,42 @@
  * @version 1.2
 */
 
-/* Import [DONT TOUCH] */
 @import url('https://kuro-sama.github.io/Moon-Rabbits-Dream-About-VirtualMod/release/tsukino-mito.base.css');
-/* This makes Discord like another window */
 @import url('https://kuro-sama.github.io/Moon-Rabbits-Dream-About-VirtualMod/release/window-mode.css');
-
 @import url(https://fonts.cdnfonts.com/css/sf-pro-display);
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap);
 
 
 /* Top Window Text */
 :root {
-    --a-custom-text: "(-.-)Zzz"; /* The text that appear in top, "" if you dont want any [write in "(text)"] */
-    --sidewidth: 200px;
     --staticbg: #DD9FBD;
-    --the-borders: 2px solid #da4a60;
     --background-primary: hsl(210, 5%, 16%);
     --background-secondary: hsl(216, 4%, 22%);
     --background-secondary-alt: hsl(210, 5%, 16%);
-
     --background-tertiary: hsl(216, 4%, 22%);
     --background-accent: hsl(213, 64%, 78%);
     
     --sidedark: hsla(216, 4%, 22%, 0.5);
     --sidelight: hsla(0, 0%, 100%, 0.6);
-    /* font */
+
+    /* dock */
+    --home-icon: initial;
+    --favorites-icon: initial;
+    --dock-border-radius: 0;
+
+    /* dock */
     --custom-font-display: "";
     --custom-font-regular: "";
     --custom-font-primary: "";
     --custom-font-code: "";
-    --text-color: #ffffff;
+
+    /*stuff*/
+    --the-borders: 2px solid #da4a60;
+    --scroller-color: hsl(0, 0%, 42%);
+    --sidewidth: 220px;
+    --members-width: 240px;
+    --text-color: #d1d1d1;
+    --a-custom-text: "(-.-)Zzz"; /* The text that appear in top, "" if you dont want any [write in "(text)"] */
 }
 
 
