@@ -34,13 +34,12 @@
     
     --sidedark: hsla(216, 4%, 22%, 0.5);
     --sidelight: hsla(0, 0%, 100%, 0.6);
-    --boxtext: #fff;
     /* font */
     --custom-font-display: "";
     --custom-font-regular: "";
     --custom-font-primary: "";
     --custom-font-code: "";
-    --text-color: #313D40;
+    --text-color: #ffffff;
 }
 
 
