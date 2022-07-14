@@ -37,8 +37,7 @@
     --background-primary: hsl(216, 7%, 6%);
     --background-secondary: hsl(216, 7%, 6%);
     --background-secondary-alt: hsl(216, 7%, 6%);
-    --boxtext: #fff;
-    --background-tertiary: hsl(216, 7%, 6%);
+     --background-tertiary: hsl(216, 7%, 6%);
     --background-accent: hsl(217, 8%, 21%);
     --background-floating: hsl(225, 8%, 4%);
     --background-mobile-primary: var(--background-primary);
@@ -103,6 +102,28 @@
     background-color: transparent;
 }
 
+/*box shadow test*/
+
+.animatedContainer-2laTjx,
+.bannerImage-ubW8K-,
+.header-3OsQeK {
+    border-top-left-radius: 18px;
+   
+    border-bottom-left-radius: 18px;
+
+}
+.searchBar-3TnChZ {
+    box-shadow: none;
+}
+.toolbar-3_r2xA .search-2Mwzzq:not(.open-1F8u2c) .searchBar-jGtisZ {
+    box-shadow: none;
+ 
+}.content-1jQy2l:before {
+
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
 /* 4. dock */
 
 
@@ -127,7 +148,6 @@
     contain: unset;
     border-radius: 18px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
-    background-color: transparent;
 }
 
 .theme-light .guilds-2JjMmN:not(.theme-dark) .scroller-3X7KbA {
