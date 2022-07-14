@@ -21,6 +21,7 @@
     --icon-color: var(--text-color);
     --home-icon: initial;
     --favorites-icon: initial;
+    --icon:42;
 
     /* font */
     --custom-font-display: "";
@@ -234,6 +235,10 @@
 
 /* 4. dock */
 
+.wrapper-28eC3z {
+    transform: scale(calc((var(--icon) * 100%) / 48));
+    height: calc(var(--icon) * 1px);
+}
 
 .childWrapper-1j_1ub,
 .circleIconButton-1VxDrg {

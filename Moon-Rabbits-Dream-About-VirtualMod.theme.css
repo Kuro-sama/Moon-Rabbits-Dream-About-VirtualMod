@@ -32,6 +32,7 @@
     --home-icon: initial;
     --favorites-icon: initial;
     --dock-border-radius: 0;
+    --icon:42;
 
     /* font */
     --custom-font-display: "";
