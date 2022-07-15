@@ -18,15 +18,16 @@
 
 :root {
     --staticbg: rgb(48, 132, 168);
-    --background-primary: hsl(210, 5%, 16%);
-    --background-secondary: hsl(216, 4%, 22%);
-    --background-secondary-alt: hsl(210, 5%, 16%);
-    --background-tertiary: hsl(216, 4%, 22%);
+    --background-primary: 	#161618;
+    --background-secondary: #1c1c1e;
+    --background-secondary-alt: 	#212124;
+    --background-tertiary: #161618;
     --background-accent: hsl(213, 64%, 78%);
     --gradient: linear-gradient(270deg, #4BB4E0, #DD9FBD 60%);
-    --sidedark: hsla(216, 4%, 22%, 0.5);
+    --sidedark: #16161873;
     --sidelight: hsla(0, 0%, 100%, 0.6);
     --drag-background: linear-gradient(#e8c4d3, #e39ba7);
+    --channel-hover: #e8c4d3;
     --radius-theme: 18px;
     --radius-secondary: 8px;
 
@@ -81,6 +82,51 @@ div#app-mount.appMount-2yBXZl {
     }
 }*/
 
+/* testing stuff */ /*
+
+#app-mount .form-3gdLxP .scrollableContainer-15eg7h {
+    border-radius: 8px;
+    border:var(--accent-border);
+}
+.chat-2ZfjoI {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 18px;
+    background-color: var(--background-primary);
+    border-left: none;
+    border-top: none;
+    border-bottom: var(--the-borders);
+    border-right: var(--the-borders);
+}
+#app-mount .layers-OrUESM {
+    margin-bottom: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    border-bottom:none;
+    border-right: none;
+    box-shadow: none;
+}
+#app-mount .withFrame-2dL45i {
+    background: var(--drag-background);
+    border-top-left-radius: var(--radius-theme);
+    border-top-right-radius: var(--radius-theme);
+    margin-left: 24px;
+    margin-right: 96px;
+    margin-top: 24px;
+    min-height: 32px;
+    border: var(--the-borders);
+    
+    flex-direction: row;
+
+}
+ .theme-dark .wrapper-1_HaEi {
+    background-color: transparent;
+}
+.theme-dark .sidebar-1tnWFu  {
+   
+    border-bottom: var(--the-borders);}*/
+    
+
 div#app-mount.appMount-2yBXZl {
     background: var(--staticbg) ;
     
@@ -97,3 +143,4 @@ div#app-mount.appMount-2yBXZl {
     border-left:  var(--accent-border);
     border-bottom: var(--accent-border);
 }
+
