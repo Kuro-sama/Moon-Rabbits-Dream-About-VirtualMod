@@ -5,18 +5,16 @@
 
 :root {
 
- /* hue */
- --background-hue: 214;
- --accent-p: 331;
- --box-shadow-selection: 0 0 0 3px var(--brand-experiment-300);
-
+ /* stuff */
+    --accent-hue: 213;
+    --accent-saturation: 100%;
+    --accent-brightness: 50%;
+    --background-hue: 214;
+    --box-shadow-selection: 0 0 0 3px var(--brand-experiment-300);
+    --staticbg: hsl(331, 28%,75%);
     --the-borders: 3px solid #da4a60;
     --drag-background: linear-gradient(#e8c4d3, #e39ba7);
-    --staticbg: #DD9FBD;
-    --font-display: var(--custom-font-display), BlinkMacSystemFont, "SF Pro Display", 'Inter', "Helvetica Neue", "Helvetica", sans-serif;
-    --font-regular: var(--custom-font-regular), BlinkMacSystemFont, "SF Pro Text", 'Inter', "Helvetica Neue", "Helvetica", sans-serif;
-    --font-primary: var(--custom-font-primary), 'Whitney', "Helvetica Neue", 'Helvetica', 'Arial', sans-serif;
-    --font-code: var(--custom-font-code), Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    
     --radius-theme: 18px;
     --radius-secondary: 8px;
 
@@ -26,18 +24,14 @@
     --channeltextarea-background: var(--background-secondary);
     --text-color: #fff;
     --icon-color: var(--text-color);
+    --brand-experiment: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness));
     --home-icon: initial;
     --favorites-icon: initial;
     --icon:42;
 
     --box-shadow-selection: 0 0 0 3px var(--brand-experiment-300);
 
-    /* font */
-    --custom-font-display: "";
-    --custom-font-regular: "";
-    --custom-font-primary: "";
-    --custom-font-code: "";
-
+   
 }
 
 :root {
@@ -69,6 +63,18 @@
             0 1px 0 hsl(var(--background-hue), 6%, 0%, calc(0.8* var(--window-opacity))),
             0 2px 0 hsl(var(--background-hue), 6%, 0%, calc(0.1* var(--window-opacity)));
         --elevation-stroke: 0 0 0 1px hsla(var(--background-hue), 6%, 2%, 0.7);
+
+        /* font */
+        --custom-font-display: "";
+        --custom-font-regular: "";
+        --custom-font-primary: "";
+        --custom-font-code: "";
+
+        --font-display: var(--custom-font-display), BlinkMacSystemFont, "SF Pro Display", 'Inter', "Helvetica Neue", "Helvetica", sans-serif;
+        --font-regular: var(--custom-font-regular), BlinkMacSystemFont, "SF Pro Text", 'Inter', "Helvetica Neue", "Helvetica", sans-serif;
+        --font-primary: var(--custom-font-primary), 'Whitney', "Helvetica Neue", 'Helvetica', 'Arial', sans-serif;
+        --font-code: var(--custom-font-code), Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;       
+
 }
 
 /* Theme dark */
@@ -1319,10 +1325,6 @@ bd-body .floating-window {
     background: none;
 }
 
-.theme-dark .modeSelected-3DmyhH .icon-2W8DHg, .theme-dark .modeSelected-3DmyhH:hover .icon-2W8DHg, .theme-dark .modeUnread-3Cxepe .icon-2W8DHg, .theme-dark .modeUnread-3Cxepe:hover .icon-2W8DHg {
-    color: hsla(0, 0%, 100%, 0.8);
-}
-
 .theme-dark .channel-1Shao0:hover, .theme-dark .wrapper-NhbLHG:hover .content-1gYQeQ, .theme-dark .categoryItem-Kc_HK_:hover {
     background: hsla(0, 0%, 10%, 0.6);
     color: hsla(0, 0%, 100%, 0.8);
@@ -1330,17 +1332,11 @@ bd-body .floating-window {
 .theme-dark .wrapper-NhbLHG:hover .name-28HaxV{
     color: hsla(0, 0%, 100%, 0.8) !important;
 }
-.theme-dark .clickable-28SzVr.container-1oeRFJ:active, .theme-dark .highlighted-3PcOfB.container-1oeRFJ, .theme-dark .selected-1-Z6gm.container-1oeRFJ, .theme-dark .modeSelected-3DmyhH .content-1gYQeQ, .theme-dark .modeSelected-3DmyhH:hover .content-1gYQeQ {
-    background: hsla(0, 0%, 10%, 0.9) !important;
-    color: rgba(255, 255, 255, 1) !important;
-}
+
 .theme-dark .interactiveSelected-29CP8y .name-2m3Cms, .theme-dark .modeConnected-NrO4cP .name-28HaxV, .theme-dark .modeConnected-NrO4cP:hover .name-28HaxV, .theme-dark .modeSelected-3DmyhH .name-28HaxV, .theme-dark .modeSelected-3DmyhH:hover .name-28HaxV, .theme-dark .modeUnread-3Cxepe .name-28HaxV, .theme-dark .modeUnread-3Cxepe:hover .name-28HaxV, .theme-dark .notInteractive-2tFrlE.modeConnected-NrO4cP .name-28HaxV, .theme-dark .notInteractive-2tFrlE.modeSelected-3DmyhH .name-28HaxV, .theme-dark .interactiveSelected-29CP8y {
     color: rgba(255, 255, 255, 1) !important;
 }
 
-.theme-light .modeSelected-3DmyhH .icon-2W8DHg, .theme-light .modeSelected-3DmyhH:hover .icon-2W8DHg, .theme-light .modeUnread-3Cxepe .icon-2W8DHg, .theme-light .modeUnread-3Cxepe:hover .icon-2W8DHg {
-    color: hsla(0, 0%, 0%, 0.8);
-}
 .theme-light .channel-1Shao0:hover, .theme-light .wrapper-NhbLHG:hover .content-1gYQeQ, .theme-light .categoryItem-Kc_HK_:hover {
     background: hsla(0, 0%, 100%, 0.6);
     color: hsla(0, 0%, 0%, 0.8);
@@ -1354,6 +1350,26 @@ bd-body .floating-window {
 }
 .theme-light .interactiveSelected-29CP8y .name-2m3Cms, .theme-light .modeConnected-NrO4cP .name-28HaxV, .theme-light .modeConnected-NrO4cP:hover .name-28HaxV, .theme-light .modeSelected-3DmyhH .name-28HaxV, .theme-light .modeSelected-3DmyhH:hover .name-28HaxV, .theme-light .modeUnread-3Cxepe .name-28HaxV, .theme-light .modeUnread-3Cxepe:hover .name-28HaxV, .theme-light .notInteractive-2tFrlE.modeConnected-NrO4cP .name-28HaxV, .theme-light .notInteractive-2tFrlE.modeSelected-3DmyhH .name-28HaxV, .theme-light .interactiveSelected-29CP8y {
     color: rgba(0, 0, 0, 1) !important;
+}
+
+html.app-focused .modeSelected-3DmyhH .content-1gYQeQ,
+html.app-focused .modeSelected-3DmyhH:hover .content-1gYQeQ {
+    background-color: var(--brand-experiment);
+}
+
+html.app-focused .modeSelected-3DmyhH .name-28HaxV,
+html.app-focused .modeSelected-3DmyhH:hover .name-28HaxV {
+    color: #fff;
+}
+
+html.app-focused .modeSelected-3DmyhH .icon-2W8DHg,
+html.app-focused .modeSelected-3DmyhH:hover .icon-2W8DHg {
+    color: #fff;
+}
+
+html.app-focused .modeSelected-3DmyhH .content-1gYQeQ .actionIcon-2sw4Sl,
+html.app-focused .modeSelected-3DmyhH:hover .content-1gYQeQ .actionIcon-2sw4Sl {
+    color: var(--text-normal);
 }
 
 /* Goal thing */
@@ -1531,10 +1547,8 @@ bd-body .floating-window {
 }
 
 #app-mount .form-3gdLxP .scrollableContainer-15eg7h {
-    border-radius: 5px;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    border-bottom: 3px solid var(--text-color);
+    border-radius: 8px;
+    border:var(--accent-border);
     -webkit-transition: all 500ms;
     transition: all 500ms;
 }
@@ -1545,10 +1559,8 @@ bd-body .floating-window {
     border-color: #CCB0CF;
 }
 #app-mount .contents-2MsGLg .scrollableContainer-15eg7h {
-    border-radius: 5px;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    border-bottom: solid 3px var(--text-color);
+    border-radius: 8px;
+    border:var(--accent-border);
     -webkit-transition: all 500ms;
     transition: all 500ms;
 }

@@ -1,4 +1,4 @@
-# Moon Rabbits Dream About Virtual
+# Moon Rabbits Dream About Virtual mixed with Solana by Disease#3749 - Edited by kuro
 
 A theme based on the art cover from Tsukino Mito Album Moon Rabbits Dream About Virtual!
 
