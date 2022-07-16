@@ -50,7 +50,8 @@
         --background-modifier-accent-a: 0.34;
         --background-modifier-hover: hsla(var(--background-accent-hue), var(--background-modifier-hover-s), var(--background-modifier-hover-l), var(--background-modifier-hover-a));
         --background-modifier-active: hsla(var(--background-accent-hue), var(--background-modifier-active-s), var(--background-modifier-active-l), var(--background-modifier-active-a));
-    
+        --text-link-hue: 212;
+        --text-link: hsl(calc(var(--text-link-hue) - 15), calc(var(--saturation-factor, 1)*100%), 47.8%);
         --floating-background-lightness: 0;
         --background-floating-border-l: calc(37% * (1 + var(--floating-background-lightness)));
         --background-floating-border-color: hsl(var(--background-accent-hue), 4%, var(--background-floating-border-l));
@@ -410,10 +411,10 @@
 
 .sidebar-nqHbhN {
  
-    --background-modifier-hover: var(--background-primary);
-    --background-modifier-active: var(--opacity-d);
-    --background-modifier-selected: var(--background-primary);
-    --background-modifier-accent: var(--opacity-d);
+    --background-modifier-hover: hsla(var(--background-accent-hue), 13%, 48%, 0.16);
+    --background-modifier-active:hsla(var(--background-accent-hue), 13%, 48%, 0.16);
+    --background-modifier-selected: hsla(var(--background-accent-hue), 13%, 48%, 0.16);
+    --background-modifier-accent: hsla(var(--background-accent-hue), 13%, 48%, 0.16);
 }
 .side-2ur1Qk .item-3XjbnG {
     border-radius: 6px;
@@ -498,6 +499,21 @@ html.theme-dark #app-mount .tooltipPointer-3L49xb {
      filter: drop-shadow(0 0 0 hsl(var(--background-accent-hue), 4%, calc(var(--background-floating-border-l) * 2.25)));
     border-top-color: var(--background-secondary);
 }
+
+.wrapper-2vIMkT {
+    background-color: var(--background-secondary);
+    border: var(--accent-border);
+    border-radius: 8px;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2)!important;
+
+}
+
+.button-3bklZh:hover {
+  background-color: var(--brand-experiment);
+  color: white;
+}
+
+
 
 
 /*.guilds-2JjMmN .tree-3agP2X {
@@ -1577,27 +1593,10 @@ html.app-focused .side-2ur1Qk .themed-2-lozF.selected-g-kMVV.item-3XjbnG:not(.di
 #app-mount .form-3gdLxP .scrollableContainer-15eg7h {
     border-radius: 8px;
     border:var(--accent-border);
-    -webkit-transition: all 500ms;
-    transition: all 500ms;
-}
-#app-mount .form-3gdLxP:focus-within .scrollableContainer-15eg7h {
-    border-color: #58B2DB;
-}
-#app-mount .form-3gdLxP:hover .scrollableContainer-15eg7h:not(:focus-within) {
-    border-color: #CCB0CF;
-}
-#app-mount .contents-2MsGLg .scrollableContainer-15eg7h {
-    border-radius: 8px;
-    border:var(--accent-border);
-    -webkit-transition: all 500ms;
-    transition: all 500ms;
 }
 
-#app-mount .contents-2MsGLg:focus-within .scrollableContainer-15eg7h {
-    border-color: #58B2DB;
-}
-#app-mount .contents-2MsGLg:hover .scrollableContainer-15eg7h:not(:focus-within) {
-    border-color: #CCB0CF;
+.scrollableContainer-15eg7h:focus-within {
+    box-shadow: var(--box-shadow-selection);
 }
 
 

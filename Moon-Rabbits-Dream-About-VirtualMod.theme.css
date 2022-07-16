@@ -25,10 +25,12 @@
     --accent-saturation: 100%;
     --accent-brightness: 50%;
     --background-accent-hue: 210;
+    --background-accent-saturation: 100%;
+    --background-accent-brightness: 50%;
     --box-shadow-selection: 0 0 0 3px var(--brand-experiment-300);
-
+    
     /* window colors */
-    --staticbg: rgb(190, 190, 190);
+    --staticbg: #e8c4d3;
     --background-primary:   hsla(var(--background-accent-hue),0%,15%);
     --background-secondary: hsla(var(--background-accent-hue),0%,17%);
     --background-secondary-alt: hsla(var(--background-accent-hue),0%,17%);
@@ -64,7 +66,7 @@
     --members-width: 240px;
     --text-color: #dfdfdf;
     --a-custom-text: "(-.-)Zzz"; /* The text that appear in top, "" if you dont want any [write in "(text)"] */
-}
+ }
 
 /*----------------------------------------------------
                 anything else down here
@@ -130,13 +132,15 @@ div#app-mount.appMount-2yBXZl {
     border-right: var(--the-borders);
 }*/
 
-div#app-mount.appMount-2yBXZl {
-    background: var(--staticbg) ;
-    
+/* background */
+
+#app-mount {
+    background-color: var(--staticbg);
+    box-shadow: inset 0 0 5em 2em rgba(0, 0, 0, 0.356);
 }
 
 /* Dock */
-   .scroller-3X7KbA {
+.scroller-3X7KbA {
     contain: unset;
     border-radius: calc(1.1rem * (1 + var(--dock-border-radius)));
     background-color: var(--opacity-d);
@@ -146,5 +150,4 @@ div#app-mount.appMount-2yBXZl {
     border-left:  var(--background-modifier-accent-border);
     border-bottom: var(--background-modifier-accent-border);
 }
-
 /* More Stuff*/
