@@ -286,9 +286,10 @@
     height: calc(var(--icon) * 1px);
 }
 
-.wrapper-z5ab_q {
+#app-mount .wrapper-z5ab_q {
     transform: rotate(180deg);
-    margin-left: 54px;
+    transform: unset;
+    margin-left: -4px;
 }
 
 .childWrapper-1j_1ub,
@@ -435,7 +436,7 @@
 .menu-1QACrS {
     background-color: var(--opacity-d);
     border-radius: 8px;
-    border: var(--accent-border);
+    border: var(--background-floating-border);
 }
 
 .translate-PeW1wK>.menu-1QACrS,
@@ -1221,10 +1222,7 @@ bd-body .floating-window {
     width: var(--sidebar-width);
 }
 
-#app-mount .wrapper-z5ab_q {
-    transform: unset;
-    margin-left: -2px;
-}
+
 
 .channel-1Shao0 {
     max-width: 260px;
@@ -1364,6 +1362,48 @@ html.app-focused .modeSelected-3DmyhH:hover .content-1gYQeQ .actionIcon-2sw4Sl {
     background-color: var(--brand-experiment);
 }
 
+#app-mount .elevationBorderHigh-3drnJX {
+    background-color: var(--background-primary);
+    border: var(--background-floating-border);
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+}
+
+.searchResultsWrap-5RVOkx {
+    background-color: var(--background-primary);
+    border-left: var(--accent-border);
+}
+.searchHeader-1r_ZSh {
+    background-color: var(--background-primary);
+}
+.searchResultsWrap-5RVOkx .channelName-3w2Y3c {
+    background: none;
+}
+.searchResultsWrap-5RVOkx .container-1-h9mY {
+    position: sticky;
+    bottom: 0;
+    background-color: transparent;
+     backdrop-filter: blur(2px);
+    z-index: 1;
+}
+.searchResult-O9NDji {
+    background-color: var(--background-secondary);
+    border: var(--accent-border);
+}
+.pageButton-1GMGeJ:not(.activeButton-LRWFC_):hover {
+    background-color: var(--background-modifier-hover);
+}
+.pageButton-1GMGeJ:not(.activeButton-LRWFC_):active {
+    border-radius: 0px;
+    color: var(--interactive-active);
+}
+.theme-dark .activeButton-LRWFC_, .theme-dark .activeButton-LRWFC_:hover, .theme-light .activeButton-LRWFC_, .theme-light .activeButton-LRWFC_:hover 
+{
+    background-color: var(--brand-experiment);
+    border-radius: 8px;
+}
+
+
 /* Stage Discovery */
 .container-24CyRY::-webkit-scrollbar, .nowPlayingSidebar-2OFn0o {
     display: none;
@@ -1415,11 +1455,20 @@ html.app-focused .modeSelected-3DmyhH:hover .content-1gYQeQ .actionIcon-2sw4Sl {
 }
 
 /* Channel and server unread */
+
 .unread-36eUEm {
-    height: 38px;
-    top: calc(50% - 15px);
-    border-radius: 2px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    margin-top: 10px;
 }
+
+.content-1gYQeQ .icon-2W8DHg {
+    width: 16px;
+    height: 16px;
+}
+
+
 .item-2LIpTv {
     width: 4px;
     border-radius: 2px;

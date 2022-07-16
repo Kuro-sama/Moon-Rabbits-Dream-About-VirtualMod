@@ -17,6 +17,7 @@
 
 
 
+
 :root {
 
     /* hue */
@@ -27,31 +28,41 @@
     --box-shadow-selection: 0 0 0 3px var(--brand-experiment-300);
 
     /* window colors */
-    --staticbg: #81B3D9;
-    --background-primary:   hsla(var(--background-accent-hue),9%,12%);
-    --background-secondary: hsla(var(--background-accent-hue),9%,17%);
-    --background-secondary-alt: hsla(var(--background-accent-hue),9%,17%);
-    --background-tertiary: hsla(var(--background-accent-hue),9%,17%);
+    --staticbg: rgb(190, 190, 190);
+    --background-primary:   hsla(var(--background-accent-hue),0%,15%);
+    --background-secondary: hsla(var(--background-accent-hue),0%,17%);
+    --background-secondary-alt: hsla(var(--background-accent-hue),0%,17%);
+    --background-tertiary: hsla(var(--background-accent-hue),0%,17%);
     --background-accent: hsl(213, 64%, 78%);
     --gradient: linear-gradient(270deg, #4BB4E0, #DD9FBD 60%);
-    --opacity-d: hsla(var(--background-accent-hue), 9%, 17%, var(--opacity));
+    --opacity-d: hsla(var(--background-accent-hue), 0%, 17%, var(--opacity));
     --drag-background: linear-gradient(#e8c4d3, #e39ba7);
     --radius-theme: 18px;
     --radius-secondary: 8px;
     --opacity: 0.8;
+
+    --background-floating-blur: 20px;
+    --enable-blur: 1;
+    --background-floating-blur-calc: calc(var(--background-floating-blur) * var(--enable-blur));
+
+    --background-floating-border-color: hsl(var(--background-accent-hue), 4%, var(--background-floating-border-l));
+    --background-floating-border: 1px solid var(--background-floating-border-color);
+    --background-modifier-accent-border: 1px solid var(--background-modifier-accent);
+
     
     /* dock */
     --sidebar-text-brightness: 0;
     --dock-border-radius: 0;
-    --icon:45; 
+    --icon:48; 
+
      /*stuff*/
     --brand-experiment: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness));
     --the-borders: 3px solid #da4a60;
     --scroller-color: hsl(0, 0%, 42%);
     --accent-border: 1px solid rgba(99, 99, 99, 0.507);
-    --sidewidth: 220px;
+    --sidebar-width: 240px;
     --members-width: 240px;
-    --text-color: #ffffff;
+    --text-color: #dfdfdf;
     --a-custom-text: "(-.-)Zzz"; /* The text that appear in top, "" if you dont want any [write in "(text)"] */
 }
 
@@ -79,50 +90,45 @@ div#app-mount.appMount-2yBXZl {
     }
 }*/
 
-/* testing stuff */ /*
 
-#app-mount .form-3gdLxP .scrollableContainer-15eg7h {
-    border-radius: 8px;
-    border:var(--accent-border);
-}
-.chat-2ZfjoI {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 18px;
-    background-color: var(--background-primary);
-    border-left: none;
-    border-top: none;
-    border-bottom: var(--the-borders);
-    border-right: var(--the-borders);
+/* Floating Dock Test *//* 
+#app-mount .withFrame-2dL45i {
+    background: var(--drag-background);
+    border-top-left-radius: var(--radius-theme);
+    border-top-right-radius: var(--radius-theme);
+    margin-left: 96px;
+    margin-right: 24px;
+    margin-top: 24px;
+    min-height: 32px;
+    border: var(--the-borders);
+    flex-direction: row;
 }
 #app-mount .layers-OrUESM {
     margin-bottom: 24px;
     margin-left: 24px;
     margin-right: 24px;
-    border-bottom:none;
-    border-right: none;
-    box-shadow: none;
+    border-bottom-right-radius: var(--radius-theme);
+    border-bottom-left-radius: var(--radius-theme);
+    border-left: none;
+     border-bottom: none;
+     border-right: none;
+     box-shadow: none;
+  
 }
-#app-mount .withFrame-2dL45i {
-    background: var(--drag-background);
-    border-top-left-radius: var(--radius-theme);
-    border-top-right-radius: var(--radius-theme);
-    margin-left: 24px;
-    margin-right: 96px;
-    margin-top: 24px;
-    min-height: 32px;
-    border: var(--the-borders);
-    
-    flex-direction: row;
-
+#app-mount .sidebar-1tnWFu {
+    border-bottom-left-radius: var(--radius-theme);
+    border-bottom: var(--the-borders);
+     border-left: var(--the-borders);
 }
- .theme-dark .wrapper-1_HaEi {
-    background-color: transparent;
+.wrapper-1_HaEi {
+    background: transparent!important;
+  
 }
-.theme-dark .sidebar-1tnWFu  {
-   
-    border-bottom: var(--the-borders);}*/
-    
+.chat-2ZfjoI {
+    border-bottom-right-radius: var(--radius-theme);
+    border-bottom: var(--the-borders);
+    border-right: var(--the-borders);
+}*/
 
 div#app-mount.appMount-2yBXZl {
     background: var(--staticbg) ;
@@ -130,13 +136,15 @@ div#app-mount.appMount-2yBXZl {
 }
 
 /* Dock */
-    .theme-dark .scroller-3X7KbA {
+   .scroller-3X7KbA {
     contain: unset;
     border-radius: calc(1.1rem * (1 + var(--dock-border-radius)));
-    background-color:var(--opacity-d);
+    background-color: var(--opacity-d);
     box-shadow: 0 0 0px rgba(0, 0, 0, 0.4);
-    border-top: var(--accent-border);
-    border-right: var(--accent-border);
-    border-left:  var(--accent-border);
-    border-bottom: var(--accent-border);
+    border-top: var(--background-modifier-accent-border);
+    border-right: var(--background-modifier-accent-border);
+    border-left:  var(--background-modifier-accent-border);
+    border-bottom: var(--background-modifier-accent-border);
 }
+
+/* More Stuff*/
