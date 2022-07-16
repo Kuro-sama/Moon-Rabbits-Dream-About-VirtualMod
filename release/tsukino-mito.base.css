@@ -9,7 +9,7 @@
     --accent-hue: 213;
     --accent-saturation: 100%;
     --accent-brightness: 50%;
-    --background-hue: 214;
+    --background-accent-hue: 210;
     --box-shadow-selection: 0 0 0 3px var(--brand-experiment-300);
     --staticbg: hsl(331, 28%,75%);
     --the-borders: 3px solid #da4a60;
@@ -19,7 +19,7 @@
     --radius-secondary: 8px;
 
     /* sidebar */
-    --sidewidth: 220px;
+    --sidebar-width: 220px;
     --dock-border-radius: 0;
     --channeltextarea-background: var(--background-secondary);
     --text-color: #fff;
@@ -48,21 +48,21 @@
         --background-modifier-accent-s: 10%;
         --background-modifier-accent-l: 48%;
         --background-modifier-accent-a: 0.34;
-        --background-modifier-hover: hsla(var(--background-hue), var(--background-modifier-hover-s), var(--background-modifier-hover-l), var(--background-modifier-hover-a));
-        --background-modifier-active: hsla(var(--background-hue), var(--background-modifier-active-s), var(--background-modifier-active-l), var(--background-modifier-active-a));
+        --background-modifier-hover: hsla(var(--background-accent-hue), var(--background-modifier-hover-s), var(--background-modifier-hover-l), var(--background-modifier-hover-a));
+        --background-modifier-active: hsla(var(--background-accent-hue), var(--background-modifier-active-s), var(--background-modifier-active-l), var(--background-modifier-active-a));
     
         --floating-background-lightness: 0;
         --background-floating-border-l: calc(37% * (1 + var(--floating-background-lightness)));
-        --background-floating-border-color: hsl(var(--background-hue), 4%, var(--background-floating-border-l));
+        --background-floating-border-color: hsl(var(--background-accent-hue), 4%, var(--background-floating-border-l));
         --background-floating-border: 1px solid var(--background-floating-border-color);
           
               --elevation-low:
-            0 1px 0 hsl(var(--background-hue), 6%, 0%, 0.8),
-            0 2px 0 hsl(var(--background-hue), 6%, 0%, 0.1);
+            0 1px 0 hsl(var(--background-accent-hue), 6%, 0%, 0.8),
+            0 2px 0 hsl(var(--background-accent-hue), 6%, 0%, 0.1);
         --elevation-low-a:
-            0 1px 0 hsl(var(--background-hue), 6%, 0%, calc(0.8* var(--window-opacity))),
-            0 2px 0 hsl(var(--background-hue), 6%, 0%, calc(0.1* var(--window-opacity)));
-        --elevation-stroke: 0 0 0 1px hsla(var(--background-hue), 6%, 2%, 0.7);
+            0 1px 0 hsl(var(--background-accent-hue), 6%, 0%, calc(0.8* var(--window-opacity))),
+            0 2px 0 hsl(var(--background-accent-hue), 6%, 0%, calc(0.1* var(--window-opacity)));
+        --elevation-stroke: 0 0 0 1px hsla(var(--background-accent-hue), 6%, 2%, 0.7);
 
         /* font */
         --custom-font-display: "";
@@ -428,8 +428,7 @@
 .contentRegionScroller-2_GT_N,
 .wrapper-3HVHpV,
 .wrapper-15CKyy {
-    background: var(--opacity-d);
-     backdrop-filter: blur(2px);
+    background: var(--background-primary);
 }
 
 /* 14.1. Contextmenu */
@@ -1126,14 +1125,19 @@ bd-body .floating-window {
 .panels-3wFtMD > .container-YkUktl > .avatarWrapper-1B9FTW {
     padding: 4px;
 }
+
 .button-12Fmur {
-    color: #ff6680;
-    transition: .5s;
+    color: white;
 }
 .button-12Fmur.enabled-9OeuTA:hover {
-    color: #ff3355;
-    background: none;
-    transition: .5s;
+    color: white;
+    background: var(--opacity-d);
+    transition: none;
+}
+
+.panels-3wFtMD .button-12Fmur:hover {
+    border-radius: 6px;
+    border: var(--accent-border);
 }
 
 /* Status colors */
@@ -1204,13 +1208,24 @@ bd-body .floating-window {
 
 /* Sidebar private and channels */
 
+.bannerImage-ubW8K-,
+.bannerImg-2PzH6z {
+    width: 100%;
+}
+
 .container-1eFtFS {
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .sidebar-1tnWFu {
-    width: var(--sidewidth);
+    width: var(--sidebar-width);
 }
+
+#app-mount .wrapper-z5ab_q {
+    transform: unset;
+    margin-left: -2px;
+}
+
 .channel-1Shao0 {
     max-width: 260px;
     margin-bottom: 4px;
@@ -1277,79 +1292,6 @@ bd-body .floating-window {
 
 .container-1NXEtd, .privateChannels-oVe7HL, .scroller-WSmht3 {
     background: none;
-}
-
-
-
-.animatedContainer-2laTjx, .bannerImage-ubW8K-, .bannerImg-2PzH6z {
-    width: 100%;
-}
-.bannerImg-2PzH6z {
-    height: 145px;
-}
-
-.content-1gYQeQ {
-    border-radius: 8px;
-}
-
-.content-1gYQeQ, .member-2gU6Ar {
-    margin-right: 8px;
-}
-.containerDefault-YUSmu3, .wrapper-NhbLHG, .content-1gYQeQ {
-    min-height: 40px;
-}
-.containerDefault-YUSmu3 {
-    margin-bottom: 4px;
-}
-.scroller-1ox3I2::-webkit-scrollbar, .members-3WRCEx::-webkit-scrollbar {
-    display: none;
-}
-
-.theme-dark .searchBar-3TnChZ .searchBarComponent-3N7dCG {
-    background-color: hsla(0, 0%, 10%, 0.6);
-    color: hsl(0, 0%, 72%);
-}
-.theme-light .searchBar-3TnChZ .searchBarComponent-3N7dCG {
-    background-color: hsla(0, 0%, 100%, 0.6);
-    color: hsl(0, 0%, 36%);
-}
-
-.theme-dark .selected-3veCBZ {
-    background-color: hsla(0, 0%, 10%, 0.5);
-}
-.theme-light .selected-3veCBZ {
-    background-color: hsla(0, 0%, 100%, 0.5);
-}
-
-.clickable-28SzVr:hover .layout-1qmrhw, .selected-1-Z6gm .layout-1qmrhw, .categoryItem-Kc_HK_.selectedCategoryItem-ZjqSui .itemInner-3e_4G4 {
-    background: none;
-}
-
-.theme-dark .channel-1Shao0:hover, .theme-dark .wrapper-NhbLHG:hover .content-1gYQeQ, .theme-dark .categoryItem-Kc_HK_:hover {
-    background: hsla(0, 0%, 10%, 0.6);
-    color: hsla(0, 0%, 100%, 0.8);
-}
-.theme-dark .wrapper-NhbLHG:hover .name-28HaxV{
-    color: hsla(0, 0%, 100%, 0.8) !important;
-}
-
-.theme-dark .interactiveSelected-29CP8y .name-2m3Cms, .theme-dark .modeConnected-NrO4cP .name-28HaxV, .theme-dark .modeConnected-NrO4cP:hover .name-28HaxV, .theme-dark .modeSelected-3DmyhH .name-28HaxV, .theme-dark .modeSelected-3DmyhH:hover .name-28HaxV, .theme-dark .modeUnread-3Cxepe .name-28HaxV, .theme-dark .modeUnread-3Cxepe:hover .name-28HaxV, .theme-dark .notInteractive-2tFrlE.modeConnected-NrO4cP .name-28HaxV, .theme-dark .notInteractive-2tFrlE.modeSelected-3DmyhH .name-28HaxV, .theme-dark .interactiveSelected-29CP8y {
-    color: rgba(255, 255, 255, 1) !important;
-}
-
-.theme-light .channel-1Shao0:hover, .theme-light .wrapper-NhbLHG:hover .content-1gYQeQ, .theme-light .categoryItem-Kc_HK_:hover {
-    background: hsla(0, 0%, 100%, 0.6);
-    color: hsla(0, 0%, 0%, 0.8);
-}
-.theme-light .wrapper-NhbLHG:hover .name-28HaxV {
-    color: hsla(0, 0%, 0%, 0.8);
-}
-.theme-light .clickable-28SzVr.container-1oeRFJ:active, .theme-light .highlighted-3PcOfB.container-1oeRFJ, .theme-light .selected-1-Z6gm.container-1oeRFJ, .theme-light .modeSelected-3DmyhH .content-1gYQeQ, .theme-light .modeSelected-3DmyhH:hover .content-1gYQeQ {
-    background: hsla(0, 0%, 100%, 0.9) !important;
-    color: rgba(0, 0, 0, 1) !important;
-}
-.theme-light .interactiveSelected-29CP8y .name-2m3Cms, .theme-light .modeConnected-NrO4cP .name-28HaxV, .theme-light .modeConnected-NrO4cP:hover .name-28HaxV, .theme-light .modeSelected-3DmyhH .name-28HaxV, .theme-light .modeSelected-3DmyhH:hover .name-28HaxV, .theme-light .modeUnread-3Cxepe .name-28HaxV, .theme-light .modeUnread-3Cxepe:hover .name-28HaxV, .theme-light .notInteractive-2tFrlE.modeConnected-NrO4cP .name-28HaxV, .theme-light .notInteractive-2tFrlE.modeSelected-3DmyhH .name-28HaxV, .theme-light .interactiveSelected-29CP8y {
-    color: rgba(0, 0, 0, 1) !important;
 }
 
 html.app-focused .modeSelected-3DmyhH .content-1gYQeQ,
@@ -1489,6 +1431,43 @@ html.app-focused .modeSelected-3DmyhH:hover .content-1gYQeQ .actionIcon-2sw4Sl {
     padding-right: 10px;
     padding-left: 4px;
 }
+
+.sidebar-nqHbhN {
+ 
+    --background-modifier-hover: hsla(var(--background-accent-hue), 13%, 48%, 0.16);
+    --background-modifier-active: hsla(var(--background-accent-hue), 13%, 48%, 0.2);
+    --background-modifier-selected: hsla(var(--background-accent-hue), 5%, 48%, 0.3);
+    --background-modifier-accent: hsla(var(--background-accent-hue), 10%, 48%, 0.34);
+}
+
+.sidebar-1tnWFu>*:first-child:not(.panels-3wFtMD),
+.container-YkUktl,
+.sidebar-nqHbhN,
+#channelTabs-container {
+    --text-brightness-src: var(--sidebar-text-brightness);
+    --background-modifier-hover-s: 13%;
+    --background-modifier-hover-l: 48%;
+    --background-modifier-hover-a: 0.16;
+    --background-modifier-active-s: 13%;
+    --background-modifier-active-l: 48%;
+    --background-modifier-active-a: 0.2;
+    --background-modifier-selected-s: 5%;
+    --background-modifier-selected-l: 48%;
+    --background-modifier-selected-a: 0.3;
+    --background-modifier-accent-s: 10%;
+    --background-modifier-accent-l: 48%;
+    --background-modifier-accent-a: 0.34;
+    --background-modifier-hover: hsla(var(--background-accent-hue), var(--background-modifier-hover-s), calc(var(--background-modifier-hover-l) * calc(1 - var(--text-brightness-src))), var(--background-modifier-hover-a));
+    --background-modifier-active: hsla(var(--background-accent-hue), var(--background-modifier-active-s), calc(var(--background-modifier-active-l) * calc(1 - var(--text-brightness-src))), var(--background-modifier-active-a));
+    --background-modifier-selected: hsla(var(--background-accent-hue), var(--background-modifier-selected-s), calc(var(--background-modifier-selected-l) * calc(1 - var(--text-brightness-src))), var(--background-modifier-selected-a));
+    --background-modifier-accent: hsla(var(--background-accent-hue), var(--background-modifier-accent-s), calc(var(--background-modifier-accent-l) * calc(1 - var(--text-brightness-src))), var(--background-modifier-accent-a));
+}
+
+html.app-focused .side-2ur1Qk .themed-2-lozF.selected-g-kMVV.item-3XjbnG:not(.disabled-1nofHP){
+    background: var(--brand-experiment);
+}
+
+
 /* popout options */
 .scroller-1bVxF5 {
     padding-right: 8px !important;
@@ -2005,6 +1984,8 @@ box-shadow: 0 0 0 1px rgb(32 34 37 / 60%), 0 2px 10px 0 rgb(0 0 0 / 20%);
 .voiceUserSummary-huJ8Md .icon-3akWb2 {
     color: #f0f2f2c0;
 }
+
+
 
 /* Send Friend Request and Send Message */
 .lookFilled-yCfaCM.colorGreen-3y-Z79 {

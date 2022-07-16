@@ -23,27 +23,27 @@
     --accent-hue: 213;
     --accent-saturation: 100%;
     --accent-brightness: 50%;
-    --background-hue: 210;
+    --background-accent-hue: 210;
     --box-shadow-selection: 0 0 0 3px var(--brand-experiment-300);
 
     /* window colors */
-    --staticbg: hsl(331, 28%,75%);
-    --background-primary:   hsla(var(--background-hue),9%,16%);
-    --background-secondary: hsla(var(--background-hue),9%,20%);
-    --background-secondary-alt: hsla(var(--background-hue),9%,20%);
-    --background-tertiary: hsla(var(--background-hue),9%,20%);
+    --staticbg: #81B3D9;
+    --background-primary:   hsla(var(--background-accent-hue),9%,12%);
+    --background-secondary: hsla(var(--background-accent-hue),9%,17%);
+    --background-secondary-alt: hsla(var(--background-accent-hue),9%,17%);
+    --background-tertiary: hsla(var(--background-accent-hue),9%,17%);
     --background-accent: hsl(213, 64%, 78%);
     --gradient: linear-gradient(270deg, #4BB4E0, #DD9FBD 60%);
-    --opacity-d: hsla(var(--background-hue), 14%, 19%, var(--opacity));
+    --opacity-d: hsla(var(--background-accent-hue), 9%, 17%, var(--opacity));
     --drag-background: linear-gradient(#e8c4d3, #e39ba7);
     --radius-theme: 18px;
     --radius-secondary: 8px;
-    --opacity: 0.4;
+    --opacity: 0.8;
     
     /* dock */
+    --sidebar-text-brightness: 0;
     --dock-border-radius: 0;
     --icon:45; 
-    
      /*stuff*/
     --brand-experiment: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness));
     --the-borders: 3px solid #da4a60;
@@ -51,7 +51,7 @@
     --accent-border: 1px solid rgba(99, 99, 99, 0.507);
     --sidewidth: 220px;
     --members-width: 240px;
-    --text-color: #d1d1d1;
+    --text-color: #ffffff;
     --a-custom-text: "(-.-)Zzz"; /* The text that appear in top, "" if you dont want any [write in "(text)"] */
 }
 
@@ -140,4 +140,3 @@ div#app-mount.appMount-2yBXZl {
     border-left:  var(--accent-border);
     border-bottom: var(--accent-border);
 }
-
